@@ -13,7 +13,7 @@ import dagger.Provides;
 
 /**
  * 创建日期：2018/7/5 on 17:32
- * 描述:
+ * 描述:MainActivity的P层
  * 作者:Ls
  */
 public class MainPresenter extends RxPresenter<MainContract.View> implements MainContract.Presenter{

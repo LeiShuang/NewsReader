@@ -66,7 +66,7 @@ public class TextJokerPresenter  extends RxPresenter<TextJokerContract.View> imp
 
 
     @Override
-    public void attachview(TextJokerContract.View view) {
+    public void attachView(TextJokerContract.View view) {
         registerEvent();
     }
 

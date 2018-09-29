@@ -24,7 +24,7 @@ public class ActivityModule {
     private  Activity mActivity;
 
     public ActivityModule(Activity activity) {
-        mActivity = activity;
+        this.mActivity = activity;
     }
 
 /*    @Provides

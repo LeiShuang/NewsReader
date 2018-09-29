@@ -5,10 +5,12 @@ import android.view.ViewGroup;
 
 import com.example.zfsoft.rxjavademo.app.App;
 import com.example.zfsoft.rxjavademo.di.component.ActivityComponent;
+import com.example.zfsoft.rxjavademo.di.component.DaggerActivityComponent;
 import com.example.zfsoft.rxjavademo.di.module.ActivityModule;
 import com.example.zfsoft.rxjavademo.utils.SnackbarUtil;
 
 import javax.inject.Inject;
+
 
 /**
  * 创建日期：2018/7/4 on 15:12
@@ -17,7 +19,7 @@ import javax.inject.Inject;
  */
 public abstract class BaseActivity<T extends BasePresenter> extends SimpleActivity implements BaseView {
     @Inject
-    protected T  presenter;
+    protected T presenter;
 
     protected ActivityComponent getActivityComponent(){
        return DaggerActivityComponent.builder()

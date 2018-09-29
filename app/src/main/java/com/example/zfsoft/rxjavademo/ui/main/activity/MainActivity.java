@@ -15,6 +15,7 @@ import com.example.zfsoft.rxjavademo.R;
 import com.example.zfsoft.rxjavademo.app.Constants;
 import com.example.zfsoft.rxjavademo.base.BaseActivity;
 import com.example.zfsoft.rxjavademo.base.contract.main.MainContract;
+import com.example.zfsoft.rxjavademo.presenter.main.MainPresenter;
 import com.example.zfsoft.rxjavademo.ui.joker.fragment.JokerMainFragment;
 import com.example.zfsoft.rxjavademo.ui.news.NewsFragment;
 import com.example.zfsoft.rxjavademo.utils.ToastUtil;
@@ -24,7 +25,7 @@ import com.tbruyelle.rxpermissions2.RxPermissions;
 import butterknife.BindView;
 import me.yokeyword.fragmentation.SupportFragment;
 
-public class MainActivity extends BaseActivity<MainContract.Presenter> implements MainContract.View {
+public class MainActivity extends BaseActivity<MainPresenter> implements MainContract.View {
 
 
     @BindView(R.id.tool_bar)
