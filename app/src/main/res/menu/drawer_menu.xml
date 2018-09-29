@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="@string/drawer_first_title">
+        <menu >
+            <item android:id="@+id/drawer_joker"
+                android:icon="@mipmap/ic_drawer_zhihu"
+                android:title="@string/drawer_joker"
+                android:checkable="true"
+                android:checked="true"/>
+            <item android:id="@+id/drawer_news"
+                android:icon="@mipmap/ic_drawer_gold"
+                android:title="@string/drawer_news"
+                android:checkable="true" />
+            <item android:id="@+id/drawer_chat"
+                android:icon="@mipmap/ic_drawer_wechat"
+                android:title="@string/darawer_wechat"
+                android:checkable="true"/>
+            <item android:id="@+id/drawer_vtex"
+                android:icon="@mipmap/ic_drawer_vtex"
+                android:title="@string/drawer_v2ex"
+                android:checkable="true"/>
+        </menu>
+    </item>
+<!--左拉菜单下方的布局-->
+    <item android:title="@string/drawer_second_title">
+        <menu >
+            <item android:id="@+id/drawer_liked"
+                android:icon="@mipmap/ic_drawer_like"
+                android:title="@string/drawer_liked"
+                android:checkable="true"/>
+
+            <item android:id="@+id/drawer_setting"
+                android:icon="@mipmap/ic_drawer_setting"
+                android:title="@string/drawer_setting"
+                android:checkable="true"/>
+
+            <item android:id="@+id/drawer_about"
+                android:icon="@mipmap/ic_drawer_about"
+                android:title="@string/drawer_about"
+                android:checkable="true"/>
+        </menu>
+    </item>
+</menu>

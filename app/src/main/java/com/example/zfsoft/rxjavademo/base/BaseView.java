@@ -8,7 +8,7 @@ package com.example.zfsoft.rxjavademo.base;
 public interface BaseView {
     void showErrorMessage(String msg);
 
-
+    void useNightMode(boolean isNight);
     //----------state------------
 
     void stateError();

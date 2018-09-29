@@ -11,7 +11,8 @@ import android.view.WindowManager;
 
 import com.example.zfsoft.rxjavademo.di.component.AppComponent;
 import com.example.zfsoft.rxjavademo.di.component.DaggerAppComponent;
-import com.example.zfsoft.rxjavademo.di.module.AppMoudle;
+import com.example.zfsoft.rxjavademo.di.module.AppModule;
+import com.example.zfsoft.rxjavademo.di.module.HttpModule;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -105,8 +106,10 @@ public class App extends Application{
     public static AppComponent getAppComponent(){
         if(mAppComponent == null){
            mAppComponent = DaggerAppComponent.builder()
-                   .appMoudle(new AppMoudle(instance))
+                   .appModule(new AppModule(instance))
+                   .httpModule(new HttpModule())
                    .build();
+
         }
         return  mAppComponent;
     }

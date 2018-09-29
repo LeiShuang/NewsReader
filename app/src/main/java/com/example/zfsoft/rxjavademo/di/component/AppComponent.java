@@ -1,8 +1,11 @@
 package com.example.zfsoft.rxjavademo.di.component;
 
 import com.example.zfsoft.rxjavademo.app.App;
-import com.example.zfsoft.rxjavademo.di.module.AppMoudle;
-import com.example.zfsoft.rxjavademo.di.module.HttpMoudle;
+import com.example.zfsoft.rxjavademo.di.module.AppModule;
+import com.example.zfsoft.rxjavademo.di.module.HttpModule;
+import com.example.zfsoft.rxjavademo.module.http.RetrofitHelper;
+import com.example.zfsoft.rxjavademo.module.prefes.DataManager;
+import com.example.zfsoft.rxjavademo.module.prefes.ImplPreferenceHelper;
 
 import javax.inject.Singleton;
 
@@ -14,8 +17,14 @@ import dagger.Component;
  * 作者:Ls
  */
 @Singleton
-@Component(modules = {AppMoudle.class,HttpMoudle.class})
+@Component(modules = {AppModule.class,HttpModule.class})
 public interface AppComponent {
+
     App getContext();//提供App的Context;
 
+    DataManager getDataManager();//数据中心
+
+    RetrofitHelper retrofitHelper();  //提供http的帮助类
+
+    ImplPreferenceHelper preferencesHelper();//提供sp帮助类
 }

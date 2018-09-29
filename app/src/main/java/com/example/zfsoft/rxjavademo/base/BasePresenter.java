@@ -6,6 +6,6 @@ package com.example.zfsoft.rxjavademo.base;
  * 作者:Ls
  */
 public interface BasePresenter<T extends BaseView> {
-    void attachview(T view);
+    void attachView(T view);
     void detachView();
 }

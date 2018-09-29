@@ -1,3 +1,18 @@
 <resources>
-    <string name="app_name">RxjavaDemo</string>
+    <string name="app_name">EveryNews</string>
+    <string name="app_intro">designed by Ls</string>
+    <string name="drawer_first_title">资讯大全</string>
+    <string name="drawer_joker">笑话大全</string>
+    <string name="drawer_news">新鲜事儿</string>
+    <string name="darawer_wechat">微信新闻</string>
+    <string name="drawer_v2ex">热点评</string>
+
+    <string name="drawer_second_title">选项</string>
+    <string name="drawer_liked">收藏</string>
+    <string name="drawer_setting">设置</string>
+    <string name="drawer_about">关于</string>
+    <string name="drawr_toggle_open" >打开</string>>
+    <string name="drawr_toggle_close">关闭</string>
+
+    <string name="error_tips">oh my god!居然加载失败了o(╯□╰)o\n 可能导致的原因：\n 1.服务器的压力太大； \n 2.网络环境有问题辣;</string>
 </resources>

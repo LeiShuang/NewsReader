@@ -2,11 +2,11 @@ package com.example.zfsoft.rxjavademo.di.scop;
 
 import com.example.zfsoft.rxjavademo.di.component.AppComponent;
 
-import java.lang.annotation.Documented;
 import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
 
 import javax.inject.Scope;
+
+import static java.lang.annotation.RetentionPolicy.RUNTIME;
 
 /**
  * In Dagger, an unscoped component cannot depend on a scoped component. As
@@ -15,6 +15,6 @@ import javax.inject.Scope;
  * cannot have a sub component with the same scope.
  */
 @Scope
-@Retention(RetentionPolicy.RUNTIME)
-public @interface ActivityScoped {
+@Retention(RUNTIME)
+public @interface ActivityScope {
 }
